@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "title": "Vintage Rolex Submariner 1968",
+        "description": "A rare vintage Rolex Submariner in excellent condition. Original dial, crown, and bracelet. Comes with original box and papers. A true collector's piece.",
+        "currentBidPrice": 18500,
+        "timeLeft": "2h 45m",
+        "bidsCount": 34,
+        "image": "https://i.ibb.co.com/FbSLKRZJ/Bid4-min.png"
+    },
+    {
+        "id": 2,
+        "title": "Original Banksy Canvas Print - 'Girl with Balloon'",
+        "description": "Authenticated original Banksy canvas print with certificate of authenticity. Museum-quality framing. One of only 50 prints ever released.",
+        "currentBidPrice": 9200,
+        "timeLeft": "5h 10m",
+        "bidsCount": 21,
+        "image": "https://i.ibb.co.com/Txx6r2bR/Original-Banksy-Canvas-Print-Girl-with-Balloon.jpg"
+    },
+    {
+        "id": 3,
+        "title": "2023 Gibson Les Paul Custom - Ebony",
+        "description": "Brand new 2023 Gibson Les Paul Custom in stunning Ebony finish. AAA maple top, mahogany body, and premium hardware. Includes hardshell case.",
+        "currentBidPrice": 4750,
+        "timeLeft": "1d 3h",
+        "bidsCount": 58,
+        "image": "https://i.ibb.co.com/n8MHV3xh/Bid2-min.png"
+    },
+    {
+        "id": 4,
+        "title": "Apple Mac Pro M2 Ultra - Full Setup",
+        "description": "Latest Apple Mac Pro with M2 Ultra chip, 192GB RAM, 8TB SSD. Includes Apple Pro Display XDR and Magic peripherals. Barely used, under warranty.",
+        "currentBidPrice": 11300,
+        "timeLeft": "12h 20m",
+        "bidsCount": 47,
+        "image": "https://i.ibb.co.com/TdxC8ZC/Apple-Mac-Pro-with-M2-Ultra-chip-192-GB-RAM.jpg"
+    },
+    {
+        "id": 5,
+        "title": "1957 Chevrolet Bel Air - Fully Restored",
+        "description": "Beautifully restored 1957 Chevy Bel Air in classic two-tone red and white. Original V8 engine rebuilt to spec. New interior, chrome detailing, and rust-free body.",
+        "currentBidPrice": 67000,
+        "timeLeft": "3d 8h",
+        "bidsCount": 13,
+        "image": "https://i.ibb.co.com/ccNv7YMc/1957-Chevrolet-Bel-Air.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Signed Michael Jordan 1991 Championship Jersey",
+        "description": "Authentic game-worn Chicago Bulls jersey from the 1991 NBA Championship season, personally signed by Michael Jordan. Includes PSA/DNA full letter of authenticity.",
+        "currentBidPrice": 31000,
+        "timeLeft": "6h 55m",
+        "bidsCount": 89,
+        "image": "https://i.ibb.co.com/fs0TtcY/Signed-Michael-Jordan-1991-Championship-Jersey.jpg"
+    }
+]
