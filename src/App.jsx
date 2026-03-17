@@ -1,4 +1,5 @@
 
+import Navbar from '../components/Navbar/Navbar'
 import './App.css'
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
 
   return (
     <>
-      <h1>React Auction Gallery</h1>
+      <Navbar></Navbar>
     </>
   )
 }
