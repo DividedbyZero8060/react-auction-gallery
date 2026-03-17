@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  
+  base: false;
+  themes: cupcake --default, abyss, nord, dracula;
+};
