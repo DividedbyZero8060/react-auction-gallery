@@ -7,7 +7,7 @@ const HeroSection = () => {
   className="hero min-h-screen justify-end"
   style={{
     backgroundImage:
-      "url(../../src/assets/Banner-min.jpg)",
+      "url(Banner-min.jpg)",
       backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     transform: "rotateY(180deg)"
