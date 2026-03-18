@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import Lot from '../Lot/Lot';
 
-const Lots = () => {
+const Lots = ({ handleBidInfo }) => {
 
     const [bids,SetBids] = useState([]);
 
     useEffect(() => {
         fetch("bids.json")
             .then(response => response.json())
-            .then(data => SetBids(data));
+            .then(data => SetBids(data))
+            ;
     }, []);
 
     return (
@@ -25,7 +26,7 @@ const Lots = () => {
                 <tbody>
                     {
                         bids.map((bid) => (
-                        <Lot key={bid.id} bid={bid}></Lot>
+                        <Lot key={bid.id} bid={bid} handleBidInfo={handleBidInfo}></Lot>
                     ))
                     }
                 </tbody>

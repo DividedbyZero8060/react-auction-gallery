@@ -1,8 +1,8 @@
 import React from 'react';
 import { FaHeart } from "react-icons/fa";
 
-const Lot = ({bid}) => {
-    console.log(bid);
+const Lot = ({bid, handleBidInfo}) => {
+
     return (
             <tr>
                 <td>
@@ -22,7 +22,7 @@ const Lot = ({bid}) => {
                     </td>
                     <td>{bid.timeLeft}</td>
                     <th>
-                    <button className="btn btn-ghost btn-xs"><FaHeart color='red' size={20} /></button>
+                    <button onClick={() => {handleBidInfo(bid)}} className="btn btn-ghost btn-xs"><FaHeart color='red' size={20} /></button>
                     </th>
                 </tr>
     );
