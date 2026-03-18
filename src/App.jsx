@@ -12,9 +12,17 @@ function App() {
   const [favoriteBids, SetFavoriteBids] = useState([]);
   const [total,SetTotal] = useState(0);
   const handleBidInfo = (bid) => {
+
     SetFavoriteBids([...favoriteBids,bid]);
     SetTotal(total+ bid.currentBidPrice);
   }
+
+  const handleRemoveBid = (bid) => {
+    const updateBids = favoriteBids.filter((f) => f.id !== bid.id);
+    SetFavoriteBids(updateBids);
+    SetTotal(total - bid.currentBidPrice);
+  }
+
 
   return (
     <>
@@ -24,8 +32,9 @@ function App() {
         <div className="left-container w-[65%]">
           <Lots handleBidInfo={handleBidInfo}></Lots>
         </div>
+
         <div className="right-container w-[35%]">
-            <div className='flex gap-1 justify-center items-center mb-8 border-b-1 pb-4'>
+            <div className='flex gap-1 justify-center items-center mb-8 border-b pb-4'>
               <CiHeart size={30}/>
               <h2 className='text-2xl font-bold'>Favorite Bids</h2>
             </div>
@@ -46,7 +55,7 @@ function App() {
                             alt={bid.title} />
                     </div>
                     <h2 className="card-title">{bid.title}</h2>
-                    <button><TbXboxX size={26}/></button>
+                    <button onClick={() => handleRemoveBid(bid)}><TbXboxX size={26}/></button>
                     </div>
                     <div className='flex justify-around items-center gap-2 mt-2'>
                       <p>Current Bid: ${bid.currentBidPrice}</p>
