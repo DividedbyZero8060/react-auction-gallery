@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Lot from '../Lot/Lot';
+import { ToastContainer } from 'react-toastify';
 
 const Lots = ({ handleBidInfo, favoriteBids }) => {
 
@@ -30,6 +31,18 @@ const Lots = ({ handleBidInfo, favoriteBids }) => {
                         favoriteBids={favoriteBids} ></Lot>
                     ))
                     }
+                    <ToastContainer
+                            position="top-right"
+                            autoClose={5000}
+                            hideProgressBar={false}
+                            newestOnTop={false}
+                            closeOnClick={false}
+                            rtl={false}
+                            pauseOnFocusLoss
+                            draggable
+                            pauseOnHover
+                            theme="light"
+                            />
                 </tbody>
             </table>
         </div>

@@ -1,8 +1,21 @@
 
 import { FaHeart } from "react-icons/fa";
+import { toast, ToastContainer } from "react-toastify";
 
 const Lot = ({bid, handleBidInfo, favoriteBids}) => {
 
+    const notify = ({title}) => {
+        toast(<h1 className='text-sm font-bold'>{title} added to your favorite list!</h1>, {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            });
+    };
     const isInFavorites = favoriteBids.some((f) => f.id === bid.id);
 
     const disabledStyle = {
@@ -35,7 +48,8 @@ const Lot = ({bid, handleBidInfo, favoriteBids}) => {
                     <th>
                     <button onClick={() => {
                         handleBidInfo(bid);
-                    }} 
+                        notify({title: bid.title});
+                    }}
                         disabled={isInFavorites}
                         style={isInFavorites? disabledStyle : defaultStyle}
                         className="btn btn-ghost btn-xs"><FaHeart color='red' size={20} /></button>
