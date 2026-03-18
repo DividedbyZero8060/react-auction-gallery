@@ -4,7 +4,7 @@ import { TbXboxX } from "react-icons/tb";
 
 const FavoriteBids = ({favoriteBids, handleRemoveBid, total}) => {
     return (
-        <div className="right-container w-[35%]">
+        <div className="right-container w-[35%] bg-gray-100 p-6 rounded-lg">
             <div className='flex gap-1 justify-center items-center mb-8 border-b pb-4'>
               <CiHeart size={30}/>
               <h2 className='text-2xl font-bold'>Favorite Bids</h2>

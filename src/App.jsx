@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar/Navbar'
 import './App.css'
 
 import FavoriteBids from '../components/FavoriteBids/FavoriteBids';
+import FooterGallery from '../components/FooterGallery/FooterGallery';
 
 function App() {
 
@@ -35,7 +36,9 @@ function App() {
                 ></Lots>
         </div>
         <FavoriteBids favoriteBids={favoriteBids} handleRemoveBid={handleRemoveBid} total={total}></FavoriteBids>
+        
       </div>
+      <FooterGallery></FooterGallery>
     </>
   )
 }

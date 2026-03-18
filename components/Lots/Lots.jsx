@@ -14,7 +14,7 @@ const Lots = ({ handleBidInfo, favoriteBids }) => {
     }, []);
 
     return (
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto bg-gray-100 p-6 rounded-lg">
             <table className="table">
                 <thead>
                 <tr>
