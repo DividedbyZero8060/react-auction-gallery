@@ -11,6 +11,8 @@ function App() {
 
   const [favoriteBids, SetFavoriteBids] = useState([]);
   const [total,SetTotal] = useState(0);
+  const [flagItem, SetFlagItem] = useState(false);
+
   const handleBidInfo = (bid) => {
 
     SetFavoriteBids([...favoriteBids,bid]);
@@ -23,6 +25,8 @@ function App() {
     SetTotal(total - bid.currentBidPrice);
   }
 
+  
+
 
   return (
     <>
@@ -30,7 +34,9 @@ function App() {
       <HeroSection></HeroSection>
       <div className="all-container p-8 pt-24 flex gap-8">
         <div className="left-container w-[65%]">
-          <Lots handleBidInfo={handleBidInfo}></Lots>
+          <Lots handleBidInfo={handleBidInfo}
+          favoriteBids={favoriteBids}
+                ></Lots>
         </div>
 
         <div className="right-container w-[35%]">

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Lot from '../Lot/Lot';
 
-const Lots = ({ handleBidInfo }) => {
+const Lots = ({ handleBidInfo, favoriteBids }) => {
 
     const [bids,SetBids] = useState([]);
 
@@ -26,7 +26,8 @@ const Lots = ({ handleBidInfo }) => {
                 <tbody>
                     {
                         bids.map((bid) => (
-                        <Lot key={bid.id} bid={bid} handleBidInfo={handleBidInfo}></Lot>
+                        <Lot key={bid.id} bid={bid} handleBidInfo={handleBidInfo}
+                        favoriteBids={favoriteBids} ></Lot>
                     ))
                     }
                 </tbody>
